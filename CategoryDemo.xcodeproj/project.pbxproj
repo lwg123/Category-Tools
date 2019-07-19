@@ -21,6 +21,7 @@
 		D1468A1922979829007AC089 /* CHProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = D1468A1622979829007AC089 /* CHProgressView.m */; };
 		D1468A1D2297982F007AC089 /* NSString+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = D1468A1C2297982F007AC089 /* NSString+Utils.m */; };
 		D1468A2122979835007AC089 /* NSDate+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = D1468A2022979835007AC089 /* NSDate+Utils.m */; };
+		D14CE3B222E15D3100AABD9B /* NSString+MDDate.m in Sources */ = {isa = PBXBuildFile; fileRef = D14CE3B122E15D3100AABD9B /* NSString+MDDate.m */; };
 		D1C90CB222ADF62C00EC5A54 /* MDTools.m in Sources */ = {isa = PBXBuildFile; fileRef = D1C90CB122ADF62C00EC5A54 /* MDTools.m */; };
 		D1C90CB622ADFA8C00EC5A54 /* UIButton+TitleImageSpace.m in Sources */ = {isa = PBXBuildFile; fileRef = D1C90CB522ADFA8C00EC5A54 /* UIButton+TitleImageSpace.m */; };
 		D1C90CB922ADFA9500EC5A54 /* UIImage+MDGif.m in Sources */ = {isa = PBXBuildFile; fileRef = D1C90CB722ADFA9500EC5A54 /* UIImage+MDGif.m */; };
@@ -61,6 +62,9 @@
 		D1468A1C2297982F007AC089 /* NSString+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Utils.m"; sourceTree = "<group>"; };
 		D1468A1F22979835007AC089 /* NSDate+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Utils.h"; sourceTree = "<group>"; };
 		D1468A2022979835007AC089 /* NSDate+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Utils.m"; sourceTree = "<group>"; };
+		D14CE3B022E15D3100AABD9B /* NSString+MDDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MDDate.h"; sourceTree = "<group>"; };
+		D14CE3B122E15D3100AABD9B /* NSString+MDDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MDDate.m"; sourceTree = "<group>"; };
+		D14CE3B322E15DA300AABD9B /* MDSingleton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDSingleton.h; sourceTree = "<group>"; };
 		D1C90CB022ADF62C00EC5A54 /* MDTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDTools.h; sourceTree = "<group>"; };
 		D1C90CB122ADF62C00EC5A54 /* MDTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDTools.m; sourceTree = "<group>"; };
 		D1C90CB422ADFA8C00EC5A54 /* UIButton+TitleImageSpace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+TitleImageSpace.h"; sourceTree = "<group>"; };
@@ -203,6 +207,8 @@
 		D1468A1A2297982F007AC089 /* NSString */ = {
 			isa = PBXGroup;
 			children = (
+				D14CE3B022E15D3100AABD9B /* NSString+MDDate.h */,
+				D14CE3B122E15D3100AABD9B /* NSString+MDDate.m */,
 				D1468A1B2297982F007AC089 /* NSString+Utils.h */,
 				D1468A1C2297982F007AC089 /* NSString+Utils.m */,
 			);
@@ -230,6 +236,7 @@
 		D1C90CB322ADF63300EC5A54 /* 宏定义 */ = {
 			isa = PBXGroup;
 			children = (
+				D14CE3B322E15DA300AABD9B /* MDSingleton.h */,
 			);
 			path = "宏定义";
 			sourceTree = "<group>";
@@ -362,6 +369,7 @@
 				D1C90CCB22AE001100EC5A54 /* UILabel+Utils.m in Sources */,
 				D1468A1922979829007AC089 /* CHProgressView.m in Sources */,
 				D1468A0722979812007AC089 /* UIImage+Utils.m in Sources */,
+				D14CE3B222E15D3100AABD9B /* NSString+MDDate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

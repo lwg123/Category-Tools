@@ -52,7 +52,7 @@
  *
  *  @param cardNumber 银行卡号
  *
- *  @return
+ *  @return BOOL
  */
 + (BOOL)isBankCard:(NSString *)cardNumber;
 
