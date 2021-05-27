@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D10F532D265F254300D08874 /* CMFHttpsHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = D10F532B265F254300D08874 /* CMFHttpsHandler.m */; };
+		D10F5333265F287600D08874 /* CMFIPAddressConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = D10F532F265F287600D08874 /* CMFIPAddressConfig.m */; };
+		D10F5334265F287600D08874 /* CMFGetIPAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = D10F5332265F287600D08874 /* CMFGetIPAddress.m */; };
 		D14689EC22979798007AC089 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D14689EB22979798007AC089 /* AppDelegate.m */; };
 		D14689EF22979798007AC089 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D14689EE22979798007AC089 /* ViewController.m */; };
 		D14689F222979798007AC089 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D14689F022979798007AC089 /* Main.storyboard */; };
@@ -22,6 +25,7 @@
 		D1468A1D2297982F007AC089 /* NSString+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = D1468A1C2297982F007AC089 /* NSString+Utils.m */; };
 		D1468A2122979835007AC089 /* NSDate+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = D1468A2022979835007AC089 /* NSDate+Utils.m */; };
 		D14CE3B222E15D3100AABD9B /* NSString+MDDate.m in Sources */ = {isa = PBXBuildFile; fileRef = D14CE3B122E15D3100AABD9B /* NSString+MDDate.m */; };
+		D1893010265E427000038677 /* UIImage+CMF.m in Sources */ = {isa = PBXBuildFile; fileRef = D189300E265E427000038677 /* UIImage+CMF.m */; };
 		D1C90CB222ADF62C00EC5A54 /* MDTools.m in Sources */ = {isa = PBXBuildFile; fileRef = D1C90CB122ADF62C00EC5A54 /* MDTools.m */; };
 		D1C90CB622ADFA8C00EC5A54 /* UIButton+TitleImageSpace.m in Sources */ = {isa = PBXBuildFile; fileRef = D1C90CB522ADFA8C00EC5A54 /* UIButton+TitleImageSpace.m */; };
 		D1C90CB922ADFA9500EC5A54 /* UIImage+MDGif.m in Sources */ = {isa = PBXBuildFile; fileRef = D1C90CB722ADFA9500EC5A54 /* UIImage+MDGif.m */; };
@@ -34,6 +38,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D10F532B265F254300D08874 /* CMFHttpsHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMFHttpsHandler.m; sourceTree = "<group>"; };
+		D10F532C265F254300D08874 /* CMFHttpsHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMFHttpsHandler.h; sourceTree = "<group>"; };
+		D10F532F265F287600D08874 /* CMFIPAddressConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMFIPAddressConfig.m; sourceTree = "<group>"; };
+		D10F5330265F287600D08874 /* CMFGetIPAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMFGetIPAddress.h; sourceTree = "<group>"; };
+		D10F5331265F287600D08874 /* CMFIPAddressConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMFIPAddressConfig.h; sourceTree = "<group>"; };
+		D10F5332265F287600D08874 /* CMFGetIPAddress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMFGetIPAddress.m; sourceTree = "<group>"; };
 		D14689E722979798007AC089 /* CategoryDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CategoryDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D14689EA22979798007AC089 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D14689EB22979798007AC089 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -65,6 +75,8 @@
 		D14CE3B022E15D3100AABD9B /* NSString+MDDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MDDate.h"; sourceTree = "<group>"; };
 		D14CE3B122E15D3100AABD9B /* NSString+MDDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MDDate.m"; sourceTree = "<group>"; };
 		D14CE3B322E15DA300AABD9B /* MDSingleton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDSingleton.h; sourceTree = "<group>"; };
+		D189300E265E427000038677 /* UIImage+CMF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CMF.m"; sourceTree = "<group>"; };
+		D189300F265E427000038677 /* UIImage+CMF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+CMF.h"; sourceTree = "<group>"; };
 		D1C90CB022ADF62C00EC5A54 /* MDTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDTools.h; sourceTree = "<group>"; };
 		D1C90CB122ADF62C00EC5A54 /* MDTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDTools.m; sourceTree = "<group>"; };
 		D1C90CB422ADFA8C00EC5A54 /* UIButton+TitleImageSpace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+TitleImageSpace.h"; sourceTree = "<group>"; };
@@ -96,6 +108,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D10F532E265F287600D08874 /* CMFIPAddress */ = {
+			isa = PBXGroup;
+			children = (
+				D10F532F265F287600D08874 /* CMFIPAddressConfig.m */,
+				D10F5330265F287600D08874 /* CMFGetIPAddress.h */,
+				D10F5331265F287600D08874 /* CMFIPAddressConfig.h */,
+				D10F5332265F287600D08874 /* CMFGetIPAddress.m */,
+			);
+			path = CMFIPAddress;
+			sourceTree = "<group>";
+		};
 		D14689DE22979798007AC089 = {
 			isa = PBXGroup;
 			children = (
@@ -135,7 +158,6 @@
 		D1468A00229797AA007AC089 /* 分类 */ = {
 			isa = PBXGroup;
 			children = (
-				D1C90CCC22AE03DD00EC5A54 /* New Group */,
 				D1C90CC822ADFFFD00EC5A54 /* UILabel */,
 				D1C90CBA22ADFC4D00EC5A54 /* 圆角绘制 */,
 				D1468A1E22979835007AC089 /* NSDate */,
@@ -167,6 +189,8 @@
 				D1C90CB722ADFA9500EC5A54 /* UIImage+MDGif.m */,
 				D1468A0522979812007AC089 /* UIImage+Utils.h */,
 				D1468A0622979812007AC089 /* UIImage+Utils.m */,
+				D189300F265E427000038677 /* UIImage+CMF.h */,
+				D189300E265E427000038677 /* UIImage+CMF.m */,
 			);
 			path = UIImage;
 			sourceTree = "<group>";
@@ -174,8 +198,8 @@
 		D1468A082297981A007AC089 /* UIColor */ = {
 			isa = PBXGroup;
 			children = (
-				D1468A092297981A007AC089 /* UIColor+Hex.m */,
 				D1468A0A2297981A007AC089 /* UIColor+Hex.h */,
+				D1468A092297981A007AC089 /* UIColor+Hex.m */,
 			);
 			path = UIColor;
 			sourceTree = "<group>";
@@ -227,8 +251,11 @@
 		D1C90CAF22ADF60D00EC5A54 /* 工具类Tool */ = {
 			isa = PBXGroup;
 			children = (
+				D10F532E265F287600D08874 /* CMFIPAddress */,
 				D1C90CB022ADF62C00EC5A54 /* MDTools.h */,
 				D1C90CB122ADF62C00EC5A54 /* MDTools.m */,
+				D10F532C265F254300D08874 /* CMFHttpsHandler.h */,
+				D10F532B265F254300D08874 /* CMFHttpsHandler.m */,
 			);
 			path = "工具类Tool";
 			sourceTree = "<group>";
@@ -270,13 +297,6 @@
 				D1C90CCA22AE001100EC5A54 /* UILabel+Utils.m */,
 			);
 			path = UILabel;
-			sourceTree = "<group>";
-		};
-		D1C90CCC22AE03DD00EC5A54 /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -359,14 +379,18 @@
 				D14689FA2297979A007AC089 /* main.m in Sources */,
 				D1C90CC222ADFC6500EC5A54 /* CYCustomArcButton.m in Sources */,
 				D14689EC22979798007AC089 /* AppDelegate.m in Sources */,
+				D10F5334265F287600D08874 /* CMFGetIPAddress.m in Sources */,
 				D1C90CCF22AE03FB00EC5A54 /* UIView+Extension.m in Sources */,
 				D1468A1822979829007AC089 /* CHAlertView.m in Sources */,
 				D1C90CC722ADFDF100EC5A54 /* MDPopupAlertView.m in Sources */,
+				D10F532D265F254300D08874 /* CMFHttpsHandler.m in Sources */,
 				D1C90CB622ADFA8C00EC5A54 /* UIButton+TitleImageSpace.m in Sources */,
 				D1468A1D2297982F007AC089 /* NSString+Utils.m in Sources */,
 				D1C90CC122ADFC6500EC5A54 /* CYCustomArcImageView.m in Sources */,
 				D1468A2122979835007AC089 /* NSDate+Utils.m in Sources */,
+				D10F5333265F287600D08874 /* CMFIPAddressConfig.m in Sources */,
 				D1C90CCB22AE001100EC5A54 /* UILabel+Utils.m in Sources */,
+				D1893010265E427000038677 /* UIImage+CMF.m in Sources */,
 				D1468A1922979829007AC089 /* CHProgressView.m in Sources */,
 				D1468A0722979812007AC089 /* UIImage+Utils.m in Sources */,
 				D14CE3B222E15D3100AABD9B /* NSString+MDDate.m in Sources */,
@@ -512,7 +536,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XQ8CMT39QL;
+				DEVELOPMENT_TEAM = H525Q4663M;
 				INFOPLIST_FILE = CategoryDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -530,7 +554,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XQ8CMT39QL;
+				DEVELOPMENT_TEAM = H525Q4663M;
 				INFOPLIST_FILE = CategoryDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10;
 				LD_RUNPATH_SEARCH_PATHS = (

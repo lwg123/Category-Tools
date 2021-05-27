@@ -79,4 +79,7 @@
 - (NSString *)string;
 - (NSString *)stringCutSeconds;
 
+/// 获取时间差ms，默认日期格式：yyyyMMdd HH:mm:ss 20200311 19:20:00
++ (NSString *)microsecondsDifferenceWithBeginTime:(NSString *)beginTime endTime:(NSString *)endTime dateformat:(NSString *)dateformatString;
+
 @end

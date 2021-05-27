@@ -66,8 +66,51 @@
     return [UIColor colorWithRed:((float) r / 255.0f) green:((float) g / 255.0f) blue:((float) b / 255.0f) alpha:1.0f];
 }
 
-#pragma - 颜色转换 Color转换为十六进制颜色字符串
+// 由colorComponents生成UIColor
+// 若格式错误则返回nil
++ (instancetype)colorWithComponent:(NSString *)colorComponents {
+    UIColor *color = nil;
+    NSScanner *scanner = [NSScanner scannerWithString:colorComponents];
+    scanner.charactersToBeSkipped = [NSCharacterSet whitespaceCharacterSet];
+    NSString *colorType = nil;
+    
+    if ([self isScanSuccess:scanner colorType:&colorType]) {
+        NSUInteger length = colorType.length;
+        if (length <= 4) {
+            NSInteger components[4] = {-1, -1, -1, 255};
+            for (NSUInteger index = 0; index < length; ++index) {
+                if (index > 0) {
+                    [scanner scanString:@"," intoString:nil];
+                }
+                [scanner scanInteger:&components[index]];
+            }
+            if ([self isValidWithColorType:colorType components:components]) {
+                color = [UIColor colorWithRed:(components[0] / 255.f)
+                                        green:(components[1] / 255.f)
+                                         blue:(components[2] / 255.f)
+                                        alpha:(components[3] / 255.f)];
+            }
+        }
+    }
 
+    if (color == nil) {
+        NSLog(@"Unknown color: %@", colorComponents);
+    }
+
+    return color;
+}
+
++ (BOOL)isScanSuccess:(NSScanner *)scanner colorType:(NSString **)colorType {
+    return [scanner scanUpToString:@"(" intoString:colorType] && (*colorType)
+            && scanner.scanLocation < (scanner.string.length - 1) && ++scanner.scanLocation && !scanner.atEnd;
+}
+
++ (BOOL)isValidWithColorType:(NSString *)colorType components:(const NSInteger *)components {
+    return components[0] >= 0 && components[1] >= 0 && components[2] >= 0 && components[3] >= 0
+                    && [colorType hasPrefix:@"rgb"];
+}
+
+#pragma - 颜色转换 Color转换为十六进制颜色字符串
 +(NSString *)hexValuesFromUIColor:(UIColor *)color {
     
     if (!color) {
@@ -95,5 +138,7 @@
     return returnString;
     
 }
+
+
 
 @end

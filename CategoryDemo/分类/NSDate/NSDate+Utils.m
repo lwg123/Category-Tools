@@ -404,4 +404,21 @@
 + (NSString *)dbFormatString {
     return [NSDate timestampFormatString];
 }
+
+
++ (NSString *)microsecondsDifferenceWithBeginTime:(NSString *)beginTime endTime:(NSString *)endTime dateformat:(NSString *)dateformatString {
+    NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
+    if (dateformatString != nil && dateformatString.length > 0) {
+        [dateFormat setDateFormat:dateformatString];
+    } else {
+        [dateFormat setDateFormat:@"yyyyMMdd HH:mm:ss"];
+    }
+    NSDate *beginDate =[dateFormat dateFromString:beginTime];
+    NSDate *endDate = [dateFormat dateFromString:endTime];
+    NSTimeInterval begin = [beginDate timeIntervalSince1970]*1;
+    NSTimeInterval end = [endDate timeIntervalSince1970]*1;
+    NSTimeInterval value = end - begin;
+    return value < 0 ? @"0" : [NSString stringWithFormat:@"%li", (NSUInteger)(value * 1000)];
+}
+
 @end
